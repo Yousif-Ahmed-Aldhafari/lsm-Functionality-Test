@@ -15,3 +15,11 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+
+Cypress.on('uncaught:exception', (error) => {
+  const message = error && error.message ? error.message : ''
+  if (/ResizeObserver|Script error|Non-Error promise rejection|chunk/i.test(message)) {
+    return false
+  }
+  return true
+})

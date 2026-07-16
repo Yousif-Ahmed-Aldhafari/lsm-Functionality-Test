@@ -1,0 +1,38 @@
+{
+  "baseUrl": "https://lsm.nexumind.com",
+  "loginPath": "/login",
+  "credentials": {
+    "superAdmin": {
+      "username": "superadmin@nm-lsm.local",
+      "password": "Admin@NM2024!"
+    }
+  },
+  "testDataPrefix": "Cypress test data",
+  "arabicSample": "اختبار سايبريس",
+  "englishSample": "Cypress test data",
+  "mixedLanguageSample": "Cypress اختبار 2026",
+  "safeExploration": {
+    "avoidActionText": [
+      "delete",
+      "remove",
+      "approve",
+      "reject",
+      "deactivate",
+      "disable",
+      "submit",
+      "save",
+      "send",
+      "bulk",
+      "حذف",
+      "إزالة",
+      "موافقة",
+      "اعتماد",
+      "رفض",
+      "تعطيل",
+      "حفظ",
+      "إرسال",
+      "ارسال"
+    ],
+    "temporaryRecordMarker": "Created by Cypress discovery - safe temporary data"
+  }
+}

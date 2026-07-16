@@ -1,0 +1,15 @@
+{
+  "name": "lsm-functionality-test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cypress discovery and test-case generation for the LSM web application.",
+  "scripts": {
+    "cy:open": "set ELECTRON_RUN_AS_NODE=&& cypress open",
+    "cy:discovery": "set ELECTRON_RUN_AS_NODE=&& cypress run --spec cypress/e2e/discovery/lsm-application-discovery.cy.js --browser chrome",
+    "cy:discovery:headed": "set ELECTRON_RUN_AS_NODE=&& cypress run --spec cypress/e2e/discovery/lsm-application-discovery.cy.js --browser chrome --headed",
+    "validate:results": "node cypress/utils/validate-results.cjs"
+  },
+  "devDependencies": {
+    "cypress": "13.17.0"
+  }
+}
